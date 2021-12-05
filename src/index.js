@@ -3,7 +3,7 @@ const { Builder, By, Key } = require('selenium-webdriver');
 const BASE_URL = 'https://opentdb.com/browse.php';
 
 // ENV FLAG
-const env = process.argv[4];
+const env = process.argv[5];
 
 let driver = {};
 let elements = {};
