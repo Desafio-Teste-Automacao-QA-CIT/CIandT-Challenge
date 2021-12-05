@@ -1,4 +1,4 @@
-const { open, close, firstCase, secondCase } = require("../index");
+const { open, close, firstCase, secondCase, customCase } = require("../index");
 
 beforeEach(async () => {
   await open();
@@ -21,6 +21,12 @@ describe("interface tests", () => {
       const { isPaginationEl, listItemsCount } = await secondCase();
       expect(listItemsCount).toBe(25);
       expect(isPaginationEl).toBe(true);
+    });
+  });
+
+  describe('When search for "Video Game"', () => {
+    it('there should be only the "Easy", "Medium" and "Hard" dificulties', async () => {
+      expect(await customCase()).toBeUndefined();
     });
   });
 });
