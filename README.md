@@ -76,7 +76,7 @@ yarn
     ⏯️ Running Locally
 </h3>
 
-Before running, you should first commennt [this](https://github.com/Desafio-Teste-Automacao-QA-CIT/node-tests/blob/eda7d02a774bb143a4da36c8ff9260832e17e674/test/index.spec.js#L8) line on your `index.spec.js` file. Once you're finished doing that just run one of the following commands:
+All you have to do is to run one of the following commands:
 ```sh
 npm test -local
 
